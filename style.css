@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #eee;
+    display: flex; /* Opcional: para centralizar o container principal na tela */
+    justify-content: center; /* Opcional */
+    align-items: center; /* Opcional */
+    min-height: 100vh; /* Opcional: garante que o body ocupe toda a altura da tela */
+}
+
+.item {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.header {
+    background-color: #333;
+}
+
+.footer {
+    background-color: #555;
+}
+.caixa {
+    width: 150px;
+    height: 100px;
+    background-color: #ccc; /* Cor padrão caso o estilo inline não carregue */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 16px;
+    flex-shrink: 0; /* Impede que as caixas encolham para caber */
+}
+.container-coluna {
+    display: flex; /* Define a propriedade de exibição para flex*/
+    flex-direction: column; /* Determina a direção exibição flex */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que nada vaze das bordas */
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ddd;
+    flex-grow: 1;
+}
+.container-linha {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 15px;
+    gap: 10px;
+    flex-grow: 1;
+}
